@@ -1,5 +1,16 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function outside(){
+  var outty = 10;
+  function inside(){
+    inny = outty +10
+    console.log(outty + inny);
+  }
+  return inside;
+}
+var a = outside();
+a();
+
 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
